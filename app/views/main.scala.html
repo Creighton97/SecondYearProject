@@ -1,0 +1,56 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @* Here's where we render the page title `String`. *@
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/style.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/styles.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <body id="index" data-spy="scroll" data-target=".navbar" data-offset="10">
+        <nav class="navbar .navbar-inverse navbar-fixed-top">
+        <!-- ive changed the navbar because i think it is better  -->
+          <div class="container-fluid ">
+           <!-- container-fluid class will take the full width of the viewport.  
+           If you use the container-fluid and resize the browser, 
+           you may notice the content inside it will adjust with every pixel to take the full available width.-->
+          <div class="navbar-header">
+            <!-- just has to go here -->
+            
+             
+              <a class="navbar-brand" href="@routes.HomeController.index()"><span class="glyphicon glyphicon-fire"></span>RRR</a>
+            </div>
+              <ul class="nav navbar-nav navbar">
+                
+                <li><a href="@routes.HomeController.Mens()"><span class="glyphicon glyphicon-user"></span>Men's</a></li>
+                <li><a href="@routes.HomeController.Womens()"><i class="ionicons ion-woman"></i>
+                  Women's</a></li>
+                 
+                <li><a href="@routes.HomeController.Kids()">Kids</a></li>
+                <!-- this our headings for the web page  -->
+               </ul>
+               <ul class="nav navbar-nav navbar-right">
+               <!-- im spillting it to the right because it looks nicear hope you agree  -->
+               <li><a href="@routes.HomeController.AboutUs()"><span class="glyphicon glyphicon-info-sign"></span>
+               </span> About Us</a></li>
+                <li><a href="@routes.HomeController.contactUs()"><span class="glyphicon glyphicon-earphone"></span>Contact Us</a></li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+    
+        @content
+        <script src="@routes.Assets.versioned("javascripts/main.js")" type="text/javascript"></script>
+    </body>
+</html>
+
+

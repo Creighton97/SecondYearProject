@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/CA2ITProject-master/app/controllers/HomeController.java:34:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Kids[0m
+[0m[[0m[31merror[0m] [0m[0m  location: package views.html[0m
+[0m[[0m[31merror[0m] [0m[0m        return ok(views.html.Kids.render());[0m

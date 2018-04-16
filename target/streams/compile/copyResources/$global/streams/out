@@ -1,0 +1,4 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/ITPROJECT-master/conf/application.conf,/home/wdd/ITPROJECT-master/target/scala-2.12/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/ITPROJECT-master/conf/logback.xml,/home/wdd/ITPROJECT-master/target/scala-2.12/classes/logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/ITPROJECT-master/conf/routes,/home/wdd/ITPROJECT-master/target/scala-2.12/classes/routes)[0m
